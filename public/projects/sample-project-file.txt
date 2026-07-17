@@ -1,0 +1,5 @@
+Project Preview
+
+This is a sample project file to demonstrate public file access for portfolio projects.
+
+Replace this placeholder with your real report, presentation, or code artifact file.

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450" fill="none">
+  <rect width="800" height="450" rx="32" fill="#0f172a" />
+  <rect x="24" y="24" width="752" height="402" rx="24" fill="#111827" stroke="#fbbf24" stroke-width="3"/>
+  <rect x="64" y="78" width="200" height="150" rx="20" fill="#0f172a" stroke="#d1d5db" stroke-width="2"/>
+  <rect x="296" y="110" width="384" height="44" rx="12" fill="#f59e0b" opacity="0.18"/>
+  <rect x="296" y="178" width="320" height="28" rx="10" fill="#f59e0b" opacity="0.12"/>
+  <rect x="296" y="222" width="180" height="28" rx="10" fill="#f59e0b" opacity="0.12"/>
+  <circle cx="140" cy="310" r="12" fill="#f59e0b"/>
+  <circle cx="180" cy="310" r="12" fill="#38bdf8"/>
+  <circle cx="220" cy="310" r="12" fill="#a78bfa"/>
+  <text x="400" y="420" text-anchor="middle" font-family="Inter, sans-serif" font-size="22" fill="#e5e7eb">Project Preview Image</text>
+</svg>
