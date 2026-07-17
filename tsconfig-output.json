@@ -1,0 +1,83 @@
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "useDefineForClassFields": true,
+        "lib": [
+            "es2020",
+            "dom",
+            "dom.iterable"
+        ],
+        "module": "esnext",
+        "skipLibCheck": true,
+        "moduleResolution": "bundler",
+        "allowImportingTsExtensions": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "strict": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noFallthroughCasesInSwitch": true,
+        "baseUrl": "./",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        },
+        "allowSyntheticDefaultImports": true,
+        "resolvePackageJsonExports": true,
+        "resolvePackageJsonImports": true,
+        "preserveConstEnums": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "strictBuiltinIteratorReturn": true,
+        "alwaysStrict": true,
+        "useUnknownInCatchVariables": true
+    },
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ],
+    "files": [
+        "./src/App.tsx",
+        "./src/main.tsx",
+        "./src/vite-env.d.ts",
+        "./src/components/SinglePageStack.tsx",
+        "./src/components/layout/Footer.tsx",
+        "./src/components/layout/Navbar.tsx",
+        "./src/components/loader/LoadingScreen.tsx",
+        "./src/components/sections/Certifications.tsx",
+        "./src/components/sections/Contact.tsx",
+        "./src/components/sections/Home.tsx",
+        "./src/components/sections/Journey.tsx",
+        "./src/components/sections/ProjectDetail.tsx",
+        "./src/components/sections/Projects.tsx",
+        "./src/components/sections/Skills.tsx",
+        "./src/components/three/HeroScene.tsx",
+        "./src/components/transitions/PageTransition.tsx",
+        "./src/components/ui/Button.tsx",
+        "./src/components/ui/CustomCursor.tsx",
+        "./src/components/ui/SectionHeading.tsx",
+        "./src/components/ui/ThemeToggle.tsx",
+        "./src/context/ThemeContext.tsx",
+        "./src/data/certifications.ts",
+        "./src/data/journey.ts",
+        "./src/data/projects.ts",
+        "./src/data/skills.ts",
+        "./src/hooks/useAssetPreloader.ts",
+        "./src/hooks/useContactForm.ts",
+        "./src/hooks/useMediaQuery.ts",
+        "./src/hooks/useScrollReveal.ts",
+        "./src/lib/gsapConfig.ts",
+        "./src/types/index.ts"
+    ],
+    "include": [
+        "src"
+    ]
+}
