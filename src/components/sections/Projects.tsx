@@ -117,7 +117,7 @@ export default function Projects() {
                       ))}
                     </div>
                     {project.links && (
-                      <div className="mt-6 flex gap-4 font-mono text-xs uppercase tracking-widest">
+                      <div className="mt-6 flex flex-wrap gap-4 font-mono text-xs uppercase tracking-widest">
                         {project.links.live && (
                           <Link
                             to={project.links.live}
@@ -126,6 +126,17 @@ export default function Projects() {
                           >
                             Open project →
                           </Link>
+                        )}
+                        {project.media?.some((item) => item.type === "file") && (
+                          <a
+                            href={project.media?.find((item) => item.type === "file")?.src}
+                            download={project.media?.find((item) => item.type === "file")?.src.split("/").pop()}
+                            rel="noopener noreferrer"
+                            data-cursor="DOWNLOAD"
+                            className="focus-ring rounded text-emerald-300 hover:text-emerald-200 hover:underline"
+                          >
+                            Download PBIX →
+                          </a>
                         )}
                         {project.links.repo && (
                           <a

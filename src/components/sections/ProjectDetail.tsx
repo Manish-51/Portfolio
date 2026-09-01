@@ -6,6 +6,33 @@ import { projectsData } from "../../data/projects";
 export default function ProjectDetail() {
   const { id } = useParams();
 
+  const handleFileDownload = async (src: string, filename: string) => {
+    try {
+      const response = await fetch(src, { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error("Download failed");
+      }
+
+      const blob = await response.blob();
+      const objectUrl = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = objectUrl;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      URL.revokeObjectURL(objectUrl);
+    } catch {
+      const fallbackLink = document.createElement("a");
+      fallbackLink.href = src;
+      fallbackLink.download = filename;
+      fallbackLink.rel = "noopener noreferrer";
+      document.body.appendChild(fallbackLink);
+      fallbackLink.click();
+      fallbackLink.remove();
+    }
+  };
+
   const project = useMemo(
     () => projectsData.find((item) => item.id === id),
     [id]
@@ -100,15 +127,14 @@ export default function ProjectDetail() {
               {project.media
                 .filter((item) => item.type === "file")
                 .map((item) => (
-                  <a
+                  <button
                     key={item.id}
-                    href={item.src}
-                    target="_blank"
-                    rel="noreferrer"
+                    type="button"
+                    onClick={() => handleFileDownload(item.src, item.src.split("/").pop() || item.label)}
                     className="focus-ring inline-flex items-center rounded-full border border-ivory-100/15 bg-obsidian-900/80 px-4 py-2 text-xs font-semibold text-amber-300 transition hover:border-amber-400/40"
                   >
                     {item.label}
-                  </a>
+                  </button>
                 ))}
             </div>
           </div>
