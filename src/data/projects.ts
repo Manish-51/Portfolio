@@ -116,12 +116,12 @@ export const projectsData: Project[] = [
   },
   {
     id: "p4",
-    title: "Emirates Air Cargo Analytics",
+    title: "Phonepe payment insights Analytics",
     category: "Data Analytics",
     summary:
-      "An interactive Emirates air cargo analytics dashboard delivering insights into shipment performance and logistics efficiency.",
+      "An interactive Phonepe payment insights analytics dashboard delivering insights into payment performance and user behavior.",
     description:
-      "A comprehensive analysis of Emirates air cargo operations using real shipment data, featuring custom KPIs, dynamic visualizations, and drill-down reports to uncover trends in cargo volume, route utilization, delivery timeliness, and carrier performance, enabling data-driven optimization of logistics and supply chain operations.",
+      "A comprehensive analysis of Phonepe payment data featuring custom KPIs, dynamic visualizations, and drill-down reports to uncover trends in transaction volumes, user engagement, payment methods, and regional payment patterns, enabling data-driven optimization of payment processes and user experience.",
     stack: ["Power BI", "DAX", "Python", "SQL"],
     year: "2026",
     links: {
@@ -133,7 +133,7 @@ export const projectsData: Project[] = [
         type: "image",
         label: "Project screenshot",
         src: "/projects/sample-image.svg",
-        alt: "Emirates Air Cargo Analysis screenshot",
+        alt: "Phonepe payment insights Analytics screenshot",
       },
       {
         id: "p4-video",
@@ -149,7 +149,7 @@ export const projectsData: Project[] = [
       },
     ],
     accent: "from-amber-400/30 to-emerald-400/30",
-    logo: "/logos/emirates.png",
+    logo: "/logos/PhonePe.svg",
   },
   {
     id: "p5",
